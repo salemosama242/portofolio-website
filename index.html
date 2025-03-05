@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1><title>Salem Osama - Portfolio</title></h1>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: #3042ec;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #000428, #004e92);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: yellow;
+            color: black;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: blue;
+            color: white;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        #about {
+            text-align: center;
+        }
+        .skills {
+            font-weight: bold;
+            color: yellow;
+        }
+        #projects {
+            text-align: center;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project-card h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salem Osama</h1>
+        <p style="color: rgb(152, 160, 233);">Web Developer | Looking for an Internship</p>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a web developer looking to enhance my technical skills and gain real-world experience. My skills include <span class="skills">time management, teamwork, communication, coding skills, and leadership</span>.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="file:///C:/Users/Lenovo/Downloads/Screenshot%202025-03-05%20193312.jpg" alt="Project Screenshot">
+                    <h3>Effortless Attire</h3>
+                    <p>A responsive e-commerce website with filtering options and a modern UI.</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
