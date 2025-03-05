@@ -3,114 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1><title>Salem Osama - Portfolio</title></h1>
+    <title>Salem Osama - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        h1 {
-            color: #3042ec;
-        }
-        
-        body {
-            background-color: #0a0a0a;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #000428, #004e92);
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .btn {
-            background-color: yellow;
-            color: black;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 15px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background-color: blue;
-            color: white;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-        #about {
-            text-align: center;
-        }
-        .skills {
-            font-weight: bold;
-            color: yellow;
-        }
-        #projects {
-            text-align: center;
-        }
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .project-card {
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-        .project-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .project-card h3 {
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Salem Osama</h1>
-        <p style="color: rgb(152, 160, 233);">Web Developer | Looking for an Internship</p>
-        <a href="resume.pdf" download class="btn">Download Resume</a>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">SO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Salem Osama</h1>
+            <p class="subtitle">Web Developer | Looking for an Internship</p>
+            <div class="cta-buttons">
+                <a href="resume.pdf" download class="btn primary-btn">Download Resume</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
     </header>
     
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a web developer looking to enhance my technical skills and gain real-world experience. My skills include <span class="skills">time management, teamwork, communication, coding skills, and leadership</span>.</p>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="file:///C:/Users/Lenovo/Downloads/Screenshot%202025-03-05%20193312.jpg" alt="Project Screenshot">
-                    <h3>Effortless Attire</h3>
-                    <p>A responsive e-commerce website with filtering options and a modern UI.</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-                    <a href="#" class="btn">View Project</a>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="fotor-20250209225939.png" alt="Salem Osama">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a passionate web developer looking to enhance my technical skills and gain real-world experience. I'm dedicated to creating responsive, user-friendly websites and applications that solve real-world problems.</p>
+                        <p>My journey in web development started with a curiosity about how websites work, and has evolved into a passion for creating digital experiences that are both functional and beautiful.</p>
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
+
+        <section id="skills" class="section bg-dark">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Responsive Design</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-name">Time Management</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Teamwork</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Communication</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Leadership</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Screenshot 2025-03-05 193312.jpg" alt="Effortless Attire Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Effortless Attire</h3>
+                            <p>A responsive e-commerce website with filtering options and a modern UI.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">View Project</a>
+                                <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="por.jpg" alt="Portfolio Website Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A personal portfolio website showcasing my skills and projects.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">View Project</a>
+                                <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Weather App Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>A simple weather application that displays current weather conditions.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">View Project</a>
+                                <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-dark">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Feel free to reach out to me for any opportunities or questions.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-label">Email:</span>
+                                <span class="contact-value">salemosama242@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Phone:</span>
+                                <span class="contact-value">+201093762165</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Location:</span>
+                                <span class="contact-value">Cairo ,Egypt</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/salem-osama-1637bb342?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJa1MAkt3Tv%2BOtHPy71Nz7A%3D%3D" class="social-link">LinkedIn</a>
+                            <a href="https://github.com/salemosama242" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Salem Osama. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
